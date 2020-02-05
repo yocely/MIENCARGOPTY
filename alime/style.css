@@ -701,7 +701,7 @@ input:required {
       font-size: 82px;
       display: block;
       margin-bottom: 0;
-      background: -webkit-linear-gradient(#ff9696, #ffe89e);
+      background: -webkit-linear-gradient(#58c4d7, #ffe89e);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
       @media only screen and (max-width: 767px) {
@@ -716,7 +716,7 @@ input:required {
       font-style: italic;
       text-decoration: underline; }
       .single-welcome-slide .welcome-text .hero-mail-contact:hover, .single-welcome-slide .welcome-text .hero-mail-contact:focus {
-        color: #fc6060; }
+        color: #58c4d7; }
 
 /* :: 9.0 Footer CSS */
 .footer-content {
@@ -1646,3 +1646,19 @@ input:required {
     border-radius: 10px; }
 
 /*# sourceMappingURL=style.css.map */
+.two-columns {
+  max-width: 40%;
+display: inline-block;
+}
+/* 2 columnas para tablets */
+@media (min-width: 420px) {
+breakpoint  {
+max-width: 48%;
+}
+}
+/* 4 columnas para grandes dispositivos*/
+@media (min-width: 760px) {
+breakpoint  {
+max-width: 24%;
+}
+  }
