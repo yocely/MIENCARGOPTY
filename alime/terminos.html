@@ -1,12 +1,100 @@
-<script type="text/javascript">
-function ventanaNueva(){ 
-	window.open('nueva.html','nuevaVentana','width=300, height=400')
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheets" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	
+  <!-- Title -->
+  <title>MI ENCARGO PTY</title>
 
-</script>
-<div id="Modal" class="modalDialog">
-	<div>
-		<a href="close" title="Close" class="close">X</a>
+  <!-- Favicon -->
+  <link rel="icon" href="./img/core-img/ico-3x3_inverso.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+		<!-- Preloader -->
+		<div id="preloader">
+			<div class="loader"></div>
+		</div>
+		<!-- /Preloader -->
+	
+		<!-- Top Search Form Area -->
+		<div class="top-search-area">
+			<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-body">
+							<!-- Close -->
+							<button type="button" class="btn close-btn" data-dismiss="modal"><i class="ti-close"></i></button>
+							<!-- Form -->
+							<form action="index.html" method="post">
+								<input type="search" name="top-search-bar" class="form-control" placeholder="Search and hit enter...">
+								<button type="submit">Search</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	 <!-- Header Area Start -->
+	<header class="header-area">
+			<!-- Main Header Start -->
+			<div class="main-header-area">
+				<div class="classy-nav-container breakpoint-off">
+					<div class="container">
+						<!-- Classy Menu -->
+						<nav class="classy-navbar justify-content-between" id="alimeNav">
+	
+							<!-- Logo -->
+							<a class="nav-brand" href="./index.html"><img src="./img/core-img/3x2_blanco.png" alt=""></a>
+	
+							<!-- Navbar Toggler -->
+							<div class="classy-navbar-toggler">
+								<span class="navbarToggler"><span></span><span></span><span></span></span>
+							</div>
+	
+							<!-- Menu -->
+							<div class="classy-menu">
+								<!-- Menu Close Button -->
+								<div class="classycloseIcon">
+									<div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+								</div>
+								<!-- Nav Start -->
+								<div class="classynav">
+									<ul id="nav">
+										<li><a href="./index.html">Inicio</a></li>
+										<!-- <li><a href="./servicios.html">Servicios</a></li>-->
+										<li class="active"><a href="./registro.html">Registro</a></li>
+										<li><a href="./tarifas.html">Tarifas</a></li>
+										<li><a href="./casillero.html">Recuperar casillero</a></li>
+										<li><a href="./nosotros.html">Sobre Nosotros</a></li>
+										<li><a href="./contact.html">Contactos</a></li>
+									</ul>
+	
+									<!-- Search Icon -->
+									
+								<!-- Nav End -->
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header Area End -->
+		<div class="container">
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>	
 		<h2>Términos y Condiciones de un envío (Para Envíos Currier)</h2>
 		<p>Guía Aérea y marítima Clausura y Obligaciones de embalaje:
 
@@ -51,4 +139,47 @@ function ventanaNueva(){
 			<h2> Gastos originados por la nacionalización de ingreso de productos a Panamá o al mundo.</h2>
 			<p>En caso de que cualquier producto genere por cualquier causa gastos aduanales o requiera de algún permiso para su ingreso al país, el cliente tendrá que tener sus permisos de ingreso y generar el pago de los impuestos de ley en caso de que se generen a Mi Encargo PTY actuara en su nombre para sacar y gestionar la salida del mismo una vez el cliente realice el pago a nuestra empresa en los tiempos indicados y todo retraso o almacenaje o gastos adicionales que se genere por párte del cliente por el retraso de no pago a la fecha, el cliente será responsable de todos los gastos adicionales que se generen y exime de toda responsabilidad a la empresa.</p>
 		</div>
-</div>
+
+<!-- Footer Area Start -->
+<footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-content d-flex align-items-center justify-content-between">
+                        <!-- Copywrite Text -->
+                        <div class="copywrite-text">
+                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Mi Encargo Pty  <a href="https://colorlib.com" target="_blank"></a>
+</p>
+                        </div>
+                        <!-- Footer Logo -->
+                        <div class="footer-logo">
+                            <a href="#"><img src="img/core-img/2x1.png" alt=""></a>
+                        </div>
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="ti-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="ti-instagram" aria-hidden="true"></i></a>
+                            <a href="#"><i class="ti-whatsapp-alt" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+    <!-- **** All JS Files ***** -->
+    <!-- jQuery 2.2.4 -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="js/alime.bundle.js"></script>
+    <!-- Active -->
+    <script src="js/default-assets/active.js"></script>
+
+</body>
+
+</html>
