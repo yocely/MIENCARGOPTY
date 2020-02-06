@@ -1130,7 +1130,8 @@ text-shadow: none;
 	}
         .glyph_big {
         font-size: 128px;
-        color: #58c4d7;
+		color: #58c4d7
+		;
         float: left;
         margin-right: 20px;
         }
