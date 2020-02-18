@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -118,69 +119,65 @@
                         <form class="form-horizontal" method="post">
                             <fieldset>
                                 <legend class="text-center header">Solo llena estos sencillos campos y acepta los terminos y condiciones.</legend>
-        
+                                <form class="registro.php" method="POST">
                                 <div class="form-group">
                                     <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                                     <div class="col-md-8">
-                                        <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control"required>
+                                        <input id="fname" name="nombre" type="text" placeholder="Nombre" class="form-control"required>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                                     <div class="col-md-8">
-                                        <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control"required>
+                                        <input id="lname" name="apellido" type="text" placeholder="Apellido" class="form-control"required>
                                     </div>
                                 </div>
-        
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-bookmark bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="cedula" name="cedula" type="number" placeholder="Cedula" class="form-control"required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon">   Fecha de Nacimiento</i></span>
+                                    <div class="col-md-8">
+                                        <input id="date" name="fechaNac" type="date" placeholder="Fecha de Nacimiento" class="form-control"required>
+                                    </div>
+                                </div>
                                 <div class="form-group">
                                     <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
                                     <div class="col-md-8">
                                         <input id="email" name="email" type="email" placeholder="Correo" class="form-control"required>
                                     </div>
                                 </div>
+                               
         
                                 <div class="form-group">
                                     <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
                                     <div class="col-md-8">
-                                        <input id="phone" name="phone" type="number" placeholder="Celular" class="form-control"required>
+                                        <input id="phone" name="telefono" type="number" placeholder="Celular" class="form-control"required>
                                     </div>
                                 </div>
-
                                 <div class="form-group">
-                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon">   Fecha de Nacimiento</i></span>
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                                         <div class="col-md-8">
-                                            <input id="date" name="date" type="date" placeholder="Fecha de Nacimiento" class="form-control"required>
+                                            <input id="addess" name="direccion" type="text" placeholder="Direccion" class="form-control"required>
                                         </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                </div>
+                                        
+                                <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-crosshairs bigicon"></i></span>
                                             <div class="col-md-8">
-                                                <input id="addess" name="Direccion" type="text" placeholder="Direccion" class="form-control"required>
+                                                <input id="pais" name="pais" type="pais" placeholder="Pais" class="form-control"required>
                                             </div>
-                                        </div>
-                                        <div class="form-group">
-                                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-bookmark bigicon"></i></span>
-                                                <div class="col-md-8">
-                                                    <input id="cedula" name="Cedula" type="number" placeholder="Cedula" class="form-control"required>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-crosshairs bigicon"></i></span>
-                                                    <div class="col-md-8">
-                                                        <input id="pais" name="pais" type="pais" placeholder="Pais" class="form-control"required>
-                                                    </div>
-                                                </div>
+                                </div>
                                                 <br>
                                                 
-                                                <input type="checkbox" name="transporte" value="1"required> <a id="btn-abrir-popup" class="btn-abrir-popup" href="terminos.html" target="_blank"> Acepto los Términos y Condiciones</a>
+                                <input type="checkbox" name="terminos" value="1"required> <a id="btn-abrir-popup" class="btn-abrir-popup" href="terminos.html" target="_blank"> Acepto los Términos y Condiciones</a>
                                                 <br>
                                                 <br>
                                                 <br>
-                                                
-                                                
                                                 <br>
-                                                
                                 <div class="form-group">
                                     <div class="col-md-12 text-center">
                                         

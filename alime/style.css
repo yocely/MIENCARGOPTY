@@ -109,8 +109,8 @@ ul {
     background-color: rgba(0, 0, 0, 0.4); }
 
 .bg-img {
-  background-position: center center !important;
-  background-size: cover !important;
+  background-position: center !important;
+  background-size: contain   !important;
   background-repeat: no-repeat !important; }
 
 .jarallax {
@@ -1042,11 +1042,11 @@ input:required {
 
 /* :: 13.0 Blog CSS */
 .blog-details-text {
-  position: relative;
+  position: center;
   z-index: 1; }
   .blog-details-text .row {
-    margin-right: -5px;
-    margin-left: -5px; }
+    margin-right: 5px;
+    margin-left: 5px; }
     .blog-details-text .row .col-12 {
       padding-right: 5px;
       padding-left: 5px; }
@@ -1496,28 +1496,28 @@ input:required {
 
 /* :: 15.0 Gallery CSS */
 .alime-portfolio-area {
-  position: relative;
-  z-index: 1; }
+  position: center;
+  z-index: 50; }
   .alime-portfolio-area .container-fluid {
     padding-right: 10%;
     padding-left: 10%; }
-    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    @media only screen and (min-width: 50px) and (max-width: 100px) {
       .alime-portfolio-area .container-fluid {
-        padding-right: 5%;
-        padding-left: 5%; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        padding-right: 10%;
+        padding-left: 10%; } }
+    @media only screen and (min-width: 50px) and (max-width: 100px) {
       .alime-portfolio-area .container-fluid {
-        padding-right: 5%;
-        padding-left: 5%; } }
-    @media only screen and (max-width: 767px) {
+        padding-right: 10%;
+        padding-left: 10%; } }
+    @media only screen and (max-width: 100px) {
       .alime-portfolio-area .container-fluid {
-        padding-right: 5%;
-        padding-left: 5%; } }
+        padding-right: 10%;
+        padding-left: 10%; } }
 
 .alime-projects-menu {
   position: relative;
   z-index: 1;
-  margin-bottom: 40px; }
+  margin-bottom: 10px; }
   .alime-projects-menu .portfolio-menu .btn {
     position: relative;
     z-index: 1;
@@ -1527,7 +1527,7 @@ input:required {
     font-size: 20px;
     font-weight: 600;
     border-radius: 0;
-    margin: 0 25px;
+    margin: 0px;
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
     transition-duration: 500ms; }
@@ -1552,14 +1552,14 @@ input:required {
       width: 100%; }
 
 .single-portfolio-content {
-  position: relative;
-  z-index: 1;
+  position: right;
+  z-index: 80;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
   transition-duration: 500ms;
   overflow: hidden; }
   .single-portfolio-content img {
-    width: 50%;
+    width: 100%;
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
     transition-duration: 500ms; }
@@ -1567,12 +1567,12 @@ input:required {
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
     transition-duration: 500ms;
-    position: absolute;
-    width: 50%;
-    height: 100%;
+    position: center;
+    width: -50%;
+    height: -50%;
     top: 0;
     left: 0;
-    right: 0;
+    right: 20;
     background-color: rgba(0, 0, 0, 0.6);
     opacity: 0;
     visibility: hidden;
@@ -1582,8 +1582,8 @@ input:required {
       top: 50%;
       left: 50%;
       margin-top: 0;
-      margin-left: -6px;
-      z-index: 100;
+      margin-left: 10px;
+      z-index: 20;
       display: inline-block;
       width: 52px;
       height: 52px;
@@ -1603,7 +1603,7 @@ input:required {
     opacity: 1;
     visibility: visible; }
     .single-portfolio-content:hover .hover-content a, .single-portfolio-content:focus .hover-content a {
-      margin-top: -26px; }
+      margin-top: 26px; }
 
 /* :: 16.0 Contact CSS */
 .alime-contact-form .form-control {
