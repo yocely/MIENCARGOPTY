@@ -1497,10 +1497,11 @@ input:required {
 /* :: 15.0 Gallery CSS */
 .alime-portfolio-area {
   position: center;
-  z-index: 50; }
-  .alime-portfolio-area .container-fluid {
-    padding-right: 10%;
-    padding-left: 10%; }
+  z-index: 50; 
+}
+      .alime-portfolio-area .container-fluid {
+        padding-right: 10%;
+        padding-left: 10%; }
     @media only screen and (min-width: 50px) and (max-width: 100px) {
       .alime-portfolio-area .container-fluid {
         padding-right: 10%;
@@ -1524,7 +1525,7 @@ input:required {
     padding: 0;
     border: 0;
     background-color: transparent;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
     border-radius: 0;
     margin: 0px;
@@ -1535,6 +1536,7 @@ input:required {
       .alime-projects-menu .portfolio-menu .btn {
         font-size: 14px;
         margin: 0 5px; } }
+        /* MARGEN DE REDES SOCIALES*/
     .alime-projects-menu .portfolio-menu .btn::after {
       -webkit-transition-duration: 500ms;
       -o-transition-duration: 500ms;
@@ -1552,13 +1554,14 @@ input:required {
       width: 100%; }
 
 .single-portfolio-content {
-  position: right;
+  position: center;
   z-index: 80;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
   transition-duration: 500ms;
   overflow: hidden; }
   .single-portfolio-content img {
+    position: center;
     width: 100%;
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
@@ -1577,10 +1580,11 @@ input:required {
     opacity: 0;
     visibility: hidden;
     z-index: 3; }
-    .single-portfolio-content .hover-content a {
+    /* BOTONES DE REDES SOCIALES */
+    .single-portfolio-content .hover-content button {
       position: absolute;
-      top: 50%;
-      left: 50%;
+      top: 30%;
+      left: 10%;
       margin-top: 0;
       margin-left: 10px;
       z-index: 20;
@@ -1589,12 +1593,16 @@ input:required {
       height: 52px;
       border-radius: 50%;
       background-color: #58c4d7;
+      border: #58c4d7;
       text-align: center;
       line-height: 52px;
       font-size: 30px;
       color: #ffffff; }
+      
       .single-portfolio-content .hover-content a:hover, .single-portfolio-content .hover-content a:focus {
         background-color: #ffffff; }
+      
+        
   .single-portfolio-content:hover img, .single-portfolio-content:focus img {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
