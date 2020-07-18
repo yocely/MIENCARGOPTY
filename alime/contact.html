@@ -25,24 +25,7 @@
     <!-- /Preloader -->
 
     <!-- Top Search Form Area -->
-    <div class="top-search-area">
-        <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <!-- Close -->
-                        <button type="button" class="btn close-btn" data-dismiss="modal"><i class="ti-close"></i></button>
-                        <!-- Form -->
-                        <form action="index.html" method="post">
-                            <input type="search" name="top-search-bar" class="form-control" placeholder="Search and hit enter...">
-                            <button type="submit">Search</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    
 <!-- Header Area Start -->
 <header class="header-area">
         <!-- Main Header Start -->
@@ -113,7 +96,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="well well-sm">
-                        <form class="form-horizontal" method="post" action="C:\Users\Braya\OneDrive - Universidad Tecnológica de Panamá- Brayanth\OneDrive - Universidad Tecnológica de Panamá\brayanth\MIENCARGOPTY\alime\mensaje.html" accept-charset="utf-8">
+                        <div class="contact">
+                        <form class="form-horizontal" method="POST" action="/send-email" accept-charset="utf-8">
 
                             <fieldset>
                                 <legend class="text-center header"></legend>
@@ -121,7 +105,8 @@
                                     <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                                     <div class="col-md-8">
                                         <label class="sr-only" for="contact-name">Nombre</label>
-                                        <input name="nombre" type="text" placeholder="Nombre" class="form-control" required>
+                                        <input type="text" placeholder="Nombre" class="form-control" name="name" required>
+
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -136,24 +121,25 @@
                                     <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
                                     <div class="col-md-8">
                                         <label class="sr-only" for="contact-message">Asunto</label>
-                                        <input name="phone" type="number" placeholder="Teléfono" class="form-control" required>
+                                        <input type="number" placeholder="Teléfono" class="form-control" name="phone" required>
                                     </div>
                                 </div>
         
                                 <div class="form-group">
                                     <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
                                     <div class="col-md-8">
-                                        <textarea class="form-control" id="message" name="message" placeholder="Ingrese su mensaje. La respuesta la recibirá por correo o teléfono en un lapso no mayor a 24H laborables" cols="30" rows="10"></textarea>
+                                        <textarea class="form-control" name="message" placeholder="Ingrese su mensaje. La respuesta la recibirá por correo o teléfono en un lapso no mayor a 24H laborables" cols="30" rows="10" required></textarea>
                                     </div>
                                 </div>
         
                                 <div class="form-group">
                                     <div class="col-md-12 text-center">
-                                        <input class="btn btn-outline-primary btn-lg" name="submit" type="submit" value="Enviar">
+                                        <input class="btn btn-outline-primary btn-lg" name="submit" type="submit" >
                                     </div>
                                 </div>
                             </fieldset>
                         </form>
+                        </div>
                     </div>
                 </div>
             </div>

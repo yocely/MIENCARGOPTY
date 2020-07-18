@@ -4,18 +4,22 @@
   "description": "Alime - Photography HTML Template",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon alime/index.js",
     "start": "gulp"
   },
   "author": "colorlib",
-  "license": "CC-BY-3.0",
+  "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
     "bootstrap": "^4.2.1",
     "counterup": "^1.0.2",
     "elegant-icons": "0.0.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
     "font-awesome": "^4.7.0",
     "imagesloaded": "^4.1.4",
     "isotope-layout": "^3.0.6",
@@ -25,6 +29,7 @@
     "jquery-waypoints": "^2.0.5",
     "jquery.easing": "^1.4.1",
     "magnific-popup": "^1.1.0",
+    "nodemailer": "^6.4.10",
     "owl.carousel2": "^2.2.1",
     "popper.js": "^1.14.5",
     "wowjs": "^1.1.3"
