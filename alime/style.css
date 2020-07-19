@@ -737,7 +737,7 @@ input:required {
           font-size: 12px; } }
       .footer-content .copywrite-text p a {
         color: #58c4d7;
-        font-weight: 400; }
+        font-weight: 200; }
         @media only screen and (max-width: 767px) {
           .footer-content .copywrite-text p a {
             font-size: 12px; } }

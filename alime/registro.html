@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -17,7 +16,8 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css">
+    <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
 </head>
 
 <body>
@@ -58,8 +58,8 @@
                                     <li><a href="./tarifas.html">Tarifas</a></li>
                                     <li><a href="./casillero.html">Recuperar casillero</a></li>
                                     <li><a href="./Rastreo.html">rastreo</a></li>
-                                    <li><a href="./nosotros.html">Sobre Nosotros</a></li>
-                                    <li><a href="./contact.html">Contactos</a></li>
+                                    <li><a href="./calculadora.html">Calculadora</a></li>
+                                    <li><a href="./pagos.html">Pagos Online</a></li>
                                 </ul>
 
                                 <!-- Search Icon -->
@@ -151,11 +151,10 @@
                                             <div class="col-md-8">
                                                 <input id="pais" name="pais" type="pais" placeholder="Pais" class="form-control"required>
                                                 <br>
-                                <input type="checkbox" name="terminos" value="1"required> <a id="btn-abrir-popup" class="btn-abrir-popup" href="terminos.html" target="_blank"> Acepto los Términos y Condiciones</a>
+                                                <input type="checkbox" name="terminos" value="1"required> <a id="btn-abrir-popup" class="btn-abrir-popup" href="terminos.html" target="_blank"> Acepto los Términos y Condiciones</a>
                                                 <br>
                                                 <br>
-                                                <br>
-                                                <br>
+                                                <div class="g-recaptcha" data-sitekey="6LcF8rIZAAAAALqNUE2Vqyy2VQfEoEpvkd2zKuiR" required></div><br/>
                                                 <div class="form-group">
                                                     <div class="col-md-12 text-center">
                                                         <input class="btn btn-outline-primary btn-lg" name="submit" type="submit" value="Registrar">
@@ -182,6 +181,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                         <!-- Footer Logo -->
                         <div class="footer-logo">
                             <a href="#"><img src="img/core-img/2x1.png" alt=""></a>
+                        </div>
+                        <div class="social-info">
+                            <a href="./nosotros.html"><i  aria-hidden="true" role="link" onclick="window.location='https://www.miencargopty.com/nosotros.html'">Sobre Nosotros</i></a>
+                            <a href="./contact.html"><i  aria-hidden="true"role="link" onclick="window.location='https://www.miencargopty.com/contact.html'">Contacto</i></a>
+                            
                         </div>
                         <!-- Social Info -->
                         <div class="social-info">
