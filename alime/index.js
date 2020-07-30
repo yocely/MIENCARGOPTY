@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
   res.render('contact');
 });
 
-app.post('/send', (req, res) => {
+app.post('/send-email', (req, res) => {
   const output = `
     <p>Ha recibido una nueva solicitud de contacto desde La Pagina WEB</p>
     <h3>Datos del Cliente:</h3>

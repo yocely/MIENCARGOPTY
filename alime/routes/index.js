@@ -44,6 +44,6 @@ const info = await transporter.sendMail({
 
   console.log(contentHTML);
     res.redirect('/mensaje.html');
-})
+});
 
 module.exports = router;
