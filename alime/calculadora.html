@@ -73,7 +73,7 @@
                                     <li><a href="./tarifas.html">Tarifas</a></li>
                                     <li><a href="./casillero.html">Recuperar casillero</a></li>
                                     <li><a href="./rastreo.html">rastreo</a></li>
-                                    <li><a href="./calculadora.html">Calculadora</a></li>
+                                    <li class="active"><a href="./calculadora.html">Calculadora</a></li>
                                     <li><a href="./pagos.html">Pagos Online</a></li>
                                 </ul>
 
@@ -87,17 +87,17 @@
         </div>
     </header>
     <!-- Header Area End -->
-
+    
     <!-- Breadcrumb Area Start -->
-    <section class="breadcrumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/banner7.png);">
+    <section class="breadcrumb-area bg-img bg-overlay" style="background-image: url();">
         
     </section>
     <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="breadcrumb-content text-center">
-                        <h2 class="page-title">Contáctenos</h2>
-                        <legend class="page-title">Solo llena este formulario con tu mensaje para brindarte asistencia cuando antes.</legend>
+                        <h2 class="page-title">Calculadora de volumen</h2>
+                        <legend class="page-title">Con nuestra web puedes verificar cuanto volúmen exactamente tiene tu carga.</legend>
                         <nav aria-label="breadcrumb">
                             
                         </nav>
@@ -111,58 +111,61 @@
                 <div class="col-md-12">
                     <div class="well well-sm">
                         <div class="contact">
-                        <form class="form-horizontal" method="POST" action="/send-email" accept-charset="utf-8">
-
-                            <fieldset>
-                                <legend class="text-center header"></legend>
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                                    <div class="col-md-8">
-                                        <label class="sr-only" for="contact-name">Nombre</label>
-                                        <input type="text" placeholder="Nombre" class="form-control" name="name" required>
-
+                        <form class="form-horizontal" accept-charset="utf-8">
+                            <article class="calculadora">
+                                <p>El cálculo del peso volumétrico consiste en determinar el espacio que ocupa un artículo y llevar este espacio a medidas mas fácil de entender como Libras, Kilos, Piés Cúbicos y Metros Cúbicos.</p>
+                                <p>Para conocer el peso volumétrico de un paquete solo debes ingresar las dimensiones Alto, Ancho, Largo de tu paquete y nuestra calculadora te indicará todos los volúmenes que desees conocer.</p>
+                                <br>
+                                <br>
+                                <div class="calc-box">
+                                    <div class="input-group">
+                                        <input id="largo" class="form-control1" placeholder="Largo" aria-label="Largo" type="text" style="font-weight: bold; color: rgb(9, 219, 202);">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="cm-01">Pulgadas</span>
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <input id="ancho" class="form-control1" placeholder="Ancho" aria-label="Ancho" type="text" style="font-weight: bold; color: rgb(9, 219, 202);">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="cm-02">Pulgadas</span>
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <input id="alto" class="form-control1" placeholder="Alto" aria-label="Alto" type="text" style="font-weight: bold; color: rgb(9, 219, 202);">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="cm-03">Pulgadas</span>
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <input id="cantidad" class="form-control1" placeholder="Cantidad de Cajas" aria-label="Cantidad de Cajas" type="text" style="font-weight: bold; color: rgb(9, 219, 202);">
+                                        <div class="input-group-append">
+                                        </div>
+                                    </div>
+                                    <br>   
+                                    <a id="calc-pv-btn" type="submit" title="Calcular peso volumétrico" href="#"  class="btn alime-btn mb-3 mb-sm-0 mr-4">Calcular peso volumétrico</a>
+                
+                                    <div class="form-group pv-result">
+                                        <label class="control-label"></label>
+                                        <input id="resultado" class="form-control" readonly="" type="text" value="0" style="font-weight: bold; color: rgb(9, 219, 202);"><span>Libas Volumen ↑</span>
+                                        <input id="resultadokg" class="form-control" readonly="" type="text" value="0" style="font-weight: bold; color: rgb(9, 219, 202);"><span>Kilo gramos Volumen ↑</span>
+                                        <input id="resultadopie" class="form-control" readonly="" type="text" value="0" style="font-weight: bold; color: rgb(9, 219, 202);"><span>Pié Cúbicos (Ft3) ↑</span>
+                                        <input id="resultadomt" class="form-control" readonly="" type="text" value="0" style="font-weight: bold; color: rgb(9, 219, 202);"><span>Metros Cúbicos (M3) ↑</span>
+                                        
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
-                                    <div class="col-md-8">
-                                        <label class="sr-only" for="contact-email">Correo</label>
-                                        <input name="email" type="email" placeholder="Correo Electónico" class="form-control" required>
+                                <div class="col-12 col-lg-8 foto2">
+                                    <div >
+                                        <img class="mb-10" src="img/bg-img/caja.png" alt="">
                                     </div>
                                 </div>
-        
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
-                                    <div class="col-md-8">
-                                        <label class="sr-only" for="contact-message">Asunto</label>
-                                        <input type="number" placeholder="Teléfono" class="form-control" name="phone" required>
-                                    </div>
-                                </div>
-        
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
-                                    <div class="col-md-8">
-                                        <textarea class="form-control" name="message" placeholder="Ingrese su mensaje. La respuesta la recibirá por correo o teléfono en un lapso no mayor a 24H laborables" cols="30" rows="10" required></textarea>
-                                    </div>
-                                </div>
-                                <div class="g-recaptcha" data-sitekey="6LcF8rIZAAAAALqNUE2Vqyy2VQfEoEpvkd2zKuiR"></div>
-                                    <br/>
-                                <div class="form-group">
-                                <form action="?" method="POST">
-                                    <div class="col-md-12 text-center">
-                                        <input class="btn btn-outline-primary btn-lg" name="submit" type="submit" class="g-recaptcha" 
-                                        data-sitekey="6LcF8rIZAAAAALqNUE2Vqyy2VQfEoEpvkd2zKuiR" 
-                                        data-callback='onSubmit'>
-                                    </div>
-                                </div>
-                            </fieldset>
+                            </article>
                         </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+     
    <!-- Footer Area Start -->
    <footer class="footer-area">
         <div class="container">
@@ -208,6 +211,48 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/alime.bundle.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#calc-pv-btn").click(function (e) {
+                
+                e.preventDefault();
+                largo = $('#largo').val();
+                ancho = $('#ancho').val();
+                alto = $('#alto').val();
+                cantidad =$('#cantidad').val();
+                total = (largo * alto * ancho / 166) * cantidad;
+                total = total.toFixed(2);
+                total3 = total / 2.2;
+                total3 = total3.toFixed(2);
+                $('#resultado').css("font-weight", "bold");
+                $('#resultado').css("color", "black");
+                $('#resultado').val(total);
+                $('#resultadokg').css("font-weight", "bold");
+                $('#resultadokg').css("color", "black");
+                $('#resultadokg').val(total3);
+            });
+
+            $("#calc-pv-btn").click(function (e) {
+                
+                e.preventDefault();
+                largo = $('#largo').val();
+                ancho = $('#ancho').val();
+                alto = $('#alto').val();
+                total = (largo * alto * ancho / 1728) * cantidad;
+                total = total.toFixed(2);
+                total2 = total / 35.315
+                total2 = total2.toFixed(2);
+                $('#resultadopie').css("font-weight", "bold");
+                $('#resultadopie').css("color", "black");
+                $('#resultadopie').val(total);
+                $('#resultadomt').css("font-weight", "bold");
+                $('#resultadomt').css("color", "black");
+                $('#resultadomt').val(total2);
+
+            });
+              
+        });
+    </script>
 
 </body>
 
