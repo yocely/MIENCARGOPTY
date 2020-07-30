@@ -119,21 +119,27 @@
                                 <br>
                                 <div class="calc-box">
                                     <div class="input-group">
-                                        <input id="largo" class="form-control1" placeholder="Largo" aria-label="Largo" type="text" style="font-weight: bold; color: rgb(9, 219, 202);">
+                                        <input id="largo" class="form-control1" placeholder="Largo" aria-label="Largo" type="text" style="font-weight: bold; color: rgb(9, 219, 202);" required>
                                         <div class="input-group-append">
                                             <span class="input-group-text" id="cm-01">Pulgadas</span>
                                         </div>
                                     </div>
                                     <div class="input-group">
-                                        <input id="ancho" class="form-control1" placeholder="Ancho" aria-label="Ancho" type="text" style="font-weight: bold; color: rgb(9, 219, 202);">
+                                        <input id="ancho" class="form-control1" placeholder="Ancho" aria-label="Ancho" type="text" style="font-weight: bold; color: rgb(9, 219, 202);" required>
                                         <div class="input-group-append">
                                             <span class="input-group-text" id="cm-02">Pulgadas</span>
                                         </div>
                                     </div>
                                     <div class="input-group">
-                                        <input id="alto" class="form-control1" placeholder="Alto" aria-label="Alto" type="text" style="font-weight: bold; color: rgb(9, 219, 202);">
+                                        <input id="alto" class="form-control1" placeholder="Alto" aria-label="Alto" type="text" style="font-weight: bold; color: rgb(9, 219, 202);" required>
                                         <div class="input-group-append">
                                             <span class="input-group-text" id="cm-03">Pulgadas</span>
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <input id="peso" class="form-control1" placeholder="Peso" aria-label="Peso" type="text" style="font-weight: bold; color: rgb(9, 219, 202);">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="cm-01">Kg</span>
                                         </div>
                                     </div>
                                     <div class="input-group">
@@ -141,18 +147,51 @@
                                         <div class="input-group-append">
                                         </div>
                                     </div>
+                                    <br>
                                     <br>   
                                     <a id="calc-pv-btn" type="submit" title="Calcular peso volumétrico" href="#"  class="btn alime-btn mb-3 mb-sm-0 mr-4">Calcular peso volumétrico</a>
-                
+
+                                    <div class="calc-box">
                                     <div class="form-group pv-result">
                                         <label class="control-label"></label>
-                                        <input id="resultado" class="form-control" readonly="" type="text" value="0" style="font-weight: bold; color: rgb(9, 219, 202);"><span>Libas Volumen ↑</span>
-                                        <input id="resultadokg" class="form-control" readonly="" type="text" value="0" style="font-weight: bold; color: rgb(9, 219, 202);"><span>Kilo gramos Volumen ↑</span>
-                                        <input id="resultadopie" class="form-control" readonly="" type="text" value="0" style="font-weight: bold; color: rgb(9, 219, 202);"><span>Pié Cúbicos (Ft3) ↑</span>
-                                        <input id="resultadomt" class="form-control" readonly="" type="text" value="0" style="font-weight: bold; color: rgb(9, 219, 202);"><span>Metros Cúbicos (M3) ↑</span>
+                                    <div class="input-group">
+                                        <input id="resultado" class="form-control1" readonly="" type="text" value="0" style="font-weight: bold; color: rgb(9, 219, 202);">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="cm-01">Libras Volumen</span>
+                                        </div>
+                                    </div>      
+
+                                    <div class="input-group">
+                                        <input id="resultadokg" class="form-control1" readonly="" type="text" value="0" style="font-weight: bold; color: rgb(9, 219, 202);">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="cm-01">Kg Volumen</span>
+                                        </div>
+                                    </div>  
+
+                                    <div class="input-group">
+                                        <input id="resultadopie" class="form-control1" readonly="" type="text" value="0" style="font-weight: bold; color: rgb(9, 219, 202);">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="cm-01">Pié Cúbicos</span>
+                                        </div>
+                                    </div> 
+
+                                    <div class="input-group">
+                                        <input id="resultadomt" class="form-control1" readonly="" type="text" value="0" style="font-weight: bold; color: rgb(9, 219, 202);">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="cm-01">Metros Cúbicos</span>
+                                        </div>
+                                    </div> 
+
+                                    <div class="input-group">
+                                        <input id="libras" class="form-control1" readonly="" type="text" value="0" style="font-weight: bold; color: rgb(9, 219, 202);">
+                                            <span class="input-group-text" id="cm-01">Libras Físicas</span>
+                                        </div>
+                                    </div> 
                                         
                                     </div>
+                                
                                 </div>
+                            </div>
                                 <div class="col-12 col-lg-8 foto2">
                                     <div >
                                         <img class="mb-10" src="img/bg-img/caja.png" alt="">
@@ -219,11 +258,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 largo = $('#largo').val();
                 ancho = $('#ancho').val();
                 alto = $('#alto').val();
+                peso = $('#peso').val();
                 cantidad =$('#cantidad').val();
+                libras = (peso * 2.2) * cantidad;
                 total = (largo * alto * ancho / 166) * cantidad;
                 total = total.toFixed(2);
                 total3 = total / 2.2;
                 total3 = total3.toFixed(2);
+                $('#libras').css("font-weight", "bold");
+                $('#libras').css("color", "black");
+                $('#libras').val(libras);
                 $('#resultado').css("font-weight", "bold");
                 $('#resultado').css("color", "black");
                 $('#resultado').val(total);
