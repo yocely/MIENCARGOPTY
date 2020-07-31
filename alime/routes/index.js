@@ -22,8 +22,8 @@ router.post('/send-email', async (req, res)=>{
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
-        user: 'info@miencargopty.com', // generated ethereal user
-        pass: 'Panama$2020'  // generated ethereal password
+        user: 'noreply@miencargopty.com', // generated ethereal user
+        pass: 'zVp62wdH6!$GCyF'  // generated ethereal password
     },
     tls:{
         rejectUnauthorized: false
@@ -33,7 +33,7 @@ router.post('/send-email', async (req, res)=>{
 
 const info = await transporter.sendMail({
 
-    from: '"Contactenos" <info@miencargopty.com>', // sender address
+    from: '"Contactenos" <noreply@miencargopty.com>', // sender address
       to: 'info@miencargopty.com', // list of receivers
       subject: 'SOLICITUD DE CONTACTO', // Subject line
       html: contentHTML
