@@ -13,7 +13,6 @@ router.post('/sent-email', async (req, res) => {
       <h2>Codigo Postal: 33172-2779 </h2>
       <h2>Teléfono: 786 360-2816</h2>
     </ul>
-
     <p>Por favor copia y pega estos datos en tu pagina de compra y disfruta de tu casillero desde YA!!</p>
     <p>Recuerda siempre enviarnos el numero de tracking o rastreo de tus paquetes para una mayor atencion.</p>
     <p>Cualquiera duda o consuta puedes contactarnos al Whatsapp: +507 6289-7140 o al correo: info@miencargopty.com</p>
