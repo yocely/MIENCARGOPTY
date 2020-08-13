@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
@@ -10,22 +9,18 @@
 	<link rel="stylesheets" href="estilos.css">
   <!-- Title -->
   <title>MI ENCARGO PTY</title>
-
   <!-- Favicon -->
   <link rel="icon" href="./img/core-img/ico-3x3_inverso.png">
-
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style.css">
     <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
 </head>
-
 <body>
     <!-- Preloader -->
     <div id="preloader">
         <div class="loader"></div>
     </div>
-
  <!-- Header Area Start -->
 <header class="header-area">
         <!-- Main Header Start -->
@@ -34,15 +29,12 @@
                 <div class="container">
                     <!-- Classy Menu -->
                     <nav class="classy-navbar justify-content-between" id="alimeNav">
-
                         <!-- Logo -->
                         <a class="nav-brand" href="./index.html"><img src="./img/core-img/3x2_blanco.png" alt=""></a>
-
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
                             <span class="navbarToggler"><span></span><span></span><span></span></span>
                         </div>
-
                         <!-- Menu -->
                         <div class="classy-menu">
                             <!-- Menu Close Button -->
@@ -61,10 +53,6 @@
                                     <li><a href="./calculadora.html">Calculadora</a></li>
                                     <li><a href="./pagos.html">Pagos Online</a></li>
                                 </ul>
-
-                                <!-- Search Icon -->
-                                
-                            <!-- Nav End -->
                         </div>
                     </nav>
                 </div>
@@ -72,11 +60,8 @@
         </div>
     </header>
     <!-- Header Area End -->
-                   
-
     <!-- Breadcrumb Area Start -->
     <section class="breadcrumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/banner2.png);">
-        
     </section>
     <div class="container h-100">
             <div class="row h-100 align-items-center">
@@ -84,84 +69,78 @@
                     <div class="breadcrumb-content text-center">
                         <h2 class="page-title">Regístrate</h2>
                         <nav aria-label="breadcrumb">
-                            
                         </nav>
                     </div>
                 </div>
             </div>
     </div>
     <!-- Breadcrumb Area End -->
-
-    <!-- About Us Area Start -->
     <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="well well-sm">
-                        <form class="form-horizontal" method="post">
+                        <form class="form-horizontal" action="/sent-email" method="POST">
                             <fieldset>
-                                <legend class="text-center header">Solo llena estos sencillos campos, acepta los terminos y condiciones y obtén tu casillero gratuito.</legend>
-                                <form class="registro.php" method="POST">
-                                <div class="form-group">
+                                <legend class="text-center header">Solo llena estos sencillos campos,
+                                     acepta los terminos y condiciones y obtén tu casillero gratuito.</legend>
+                                     <div class="form-group">
                                     <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                                     <div class="col-md-8">
-                                        <input id="fname" name="nombre" type="text" placeholder="Nombre" class="form-control"required>
+                                        <input name="nombre" type="text" placeholder="Nombre" class="form-control"required>
                                     </div>
-                                </div>
-                                <div class="form-group">
+                                      </div>
+                                         <div class="form-group">
                                     <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                                     <div class="col-md-8">
-                                        <input id="lname" name="apellido" type="text" placeholder="Apellido" class="form-control"required>
+                                        <input name="apellido" type="text" placeholder="Apellido" class="form-control"required>
                                     </div>
-                                </div>
-                                <div class="form-group">
+                                    </div>
+                                     <div class="form-group">
                                     <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-bookmark bigicon"></i></span>
                                     <div class="col-md-8">
-                                        <input id="cedula" name="cedula" type="number" placeholder="Cedula" class="form-control"required>
+                                        <input name="cedula" type="number" placeholder="Cedula" class="form-control"required>
                                     </div>
-                                </div>
-                                <div class="form-group">
+                                 </div>
+                                    <div class="form-group">
                                     <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i>Fecha de Nacimiento</span>
                                     <div class="col-md-8">
-                                        <input id="date" name="fechaNac" type="date" placeholder="Fecha de Nacimiento" class="form-control"required>
+                                        <input name="fecha_de_nacimiento" type="date" placeholder="Fecha de Nacimiento" class="form-control"required>
                                     </div>
-                                </div>
-                                <div class="form-group">
+                                    </div>
+                                    <div class="form-group">
                                     <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
                                     <div class="col-md-8">
-                                        <input id="email" name="email" type="email" placeholder="Correo" class="form-control"required>
+                                        <input name="email" type="email" placeholder="Correo" class="form-control"required>
                                     </div>
-                                </div>
-                               
-        
-                                <div class="form-group">
+                                 </div>
+                                 <div class="form-group">
                                     <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
                                     <div class="col-md-8">
-                                        <input id="phone" name="telefono" type="number" placeholder="Celular" class="form-control"required>
+                                        <input name="celular" type="number" placeholder="Celular" class="form-control"required>
                                     </div>
-                                </div>
-                                <div class="form-group">
+                                    </div>
+                                    <div class="form-group">
                                         <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                                         <div class="col-md-8">
-                                            <input id="addess" name="direccion" type="text" placeholder="Direccion" class="form-control"required>
+                                            <input name="direccion" type="text" placeholder="Direccion" class="form-control"required>
                                         </div>
-                                </div>
-                                        
-                                <div class="form-group">
+                                 </div>
+                                 <div class="form-group">
                                         <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-crosshairs bigicon"></i></span>
                                             <div class="col-md-8">
                                                 <input id="pais" name="pais" type="pais" placeholder="Pais" class="form-control"required>
                                                 <br>
-                                                <input type="checkbox" name="terminos" value="1"required> <a id="btn-abrir-popup" class="btn-abrir-popup" href="terminos.html" target="_blank"> Acepto los Términos y Condiciones</a>
+                                                <input action="/sent-client" type="checkbox" name="terminos" value="1"required> <a id="btn-abrir-popup" class="btn-abrir-popup" href="terminos.html" target="_blank"> Acepto los Términos y Condiciones</a>
                                                 <br>
                                                 <br>
                                                 <div class="g-recaptcha" data-sitekey="6LcF8rIZAAAAALqNUE2Vqyy2VQfEoEpvkd2zKuiR" required></div><br/>
-                                                <div class="form-group">
+                                                    <div class="form-group">
                                                     <div class="col-md-12 text-center">
-                                                        <input class="btn btn-outline-primary btn-lg" name="submit" type="submit" value="Registrar">
-                                                    </div>
-                                                </div>
-                            </fieldset>
-                        </form>
+                                                 <input class="btn btn-outline-primary btn-lg" name="submit" type="submit" value="Registrar">
+                                             </div>
+                                     </div>
+                             </fieldset>
+                    </form>
                     </div>
                 </div>
             </div>
@@ -185,7 +164,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                         <div class="social-info">
                             <a href="./nosotros.html"><i  aria-hidden="true" role="link" onclick="window.location='https://www.miencargopty.com/nosotros.html'">Sobre Nosotros</i></a>
                             <a href="./contact.html"><i  aria-hidden="true"role="link" onclick="window.location='https://www.miencargopty.com/contact.html'">Contacto</i></a>
-                            
                         </div>
                         <!-- Social Info -->
                         <div class="social-info">
@@ -210,7 +188,5 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/alime.bundle.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
-
 </body>
-
 </html>
