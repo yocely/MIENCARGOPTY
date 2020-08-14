@@ -112,28 +112,45 @@
                     <div class="well well-sm">
                         <div class="contact">
                         <form class="form-horizontal" accept-charset="utf-8">
-                            <article class="calculadora">
-                                <p>El cálculo del peso volumétrico consiste en determinar el espacio que ocupa un artículo y llevar este espacio a medidas mas fácil de entender como Libras, Kilos, Piés Cúbicos y Metros Cúbicos.</p>
+                            <p>El cálculo del peso volumétrico consiste en determinar el espacio que ocupa un artículo y llevar este espacio a medidas mas fácil de entender como Libras, Kilos, Piés Cúbicos y Metros Cúbicos.</p>
                                 <p>Para conocer el peso volumétrico de un paquete solo debes ingresar las dimensiones Alto, Ancho, Largo de tu paquete y nuestra calculadora te indicará todos los volúmenes que desees conocer.</p>
                                 <br>
+                               <!-- Calcular centimetros a pulgadas-->
+                               <h6>Nuestra calculadora está establecida en Pulgadas pero si tus medidas estan en CM Puedes llevarlas a Pulgadas con el siguiente botón.</h6>
+                                    <div class="input-group">
+                                        <input id="centimetros" class="form-control1" placeholder="Centimetros" aria-label="Centimetros" type="number" style="font-weight: bold; color: rgb(9, 219, 202);">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="cm-01">Centimetros</span>
+                                        </div>
+                                            <a id="calc-pulgadas" type="submit" title="Calcular Pulgadas" href="#"  class="btn alime-btn mb-3 mb-sm-0 mr-4">Calcular Pulgadas</a>
+                                            <input id="pulgadas" readonly="" class="form-control1" placeholder="Pulgadas" aria-label="Pulgadas" type="number" style="font-weight: bold; color: rgb(9, 219, 202);">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="cm-01" placeholder="Pulgadas">Pulgadas</span>
+                                        </div>
+                                        </div>
+                                       <br>
+                                       <br>
+                                       <h6>Ahora en el siguiente bloque puedes calcular tu volumen con total comodidad.</h6>
+                            <article class="calculadora">
+                                
                                 <br>
                                 <div class="calc-box">
                                     <div class="input-group">
                                         <input id="largo" class="form-control1" required placeholder="Largo" aria-label="Largo" type="number" style="font-weight: bold; color: rgb(9, 219, 202);">
                                         <div class="input-group-append">
-                                            <span class="input-group-text" id="cm-01">Pulgadas</span>
+                                            <span class="input-group-text" id="cm-01" >Pulgadas de Largo</span>
                                         </div>
                                     </div>
                                     <div class="input-group">
                                         <input id="ancho" class="form-control1" required placeholder="Ancho" aria-label="Ancho" type="number" style="font-weight: bold; color: rgb(9, 219, 202);">
                                         <div class="input-group-append">
-                                            <span class="input-group-text" id="cm-02">Pulgadas</span>
+                                            <span class="input-group-text" id="cm-02">Pulgadas de Ancho</span>
                                         </div>
                                     </div>
                                     <div class="input-group">
                                         <input id="alto" class="form-control1" required placeholder="Alto" aria-label="Alto" type="number" style="font-weight: bold; color: rgb(9, 219, 202);" >
                                         <div class="input-group-append">
-                                            <span class="input-group-text" id="cm-03">Pulgadas</span>
+                                            <span class="input-group-text" id="cm-03">Pulgadas de Alto</span>
                                         </div>
                                     </div>
                                     <div class="input-group">
@@ -141,7 +158,7 @@
                                         <div class="input-group-append">
                                             <span class="input-group-text" id="cm-01">Kg</span>
                                         </div>
-                                    </div>
+                                        </div>
                                     <div class="input-group">
                                         <input id="cantidad" class="form-control1" required placeholder="Cantidad de Cajas" aria-label="Cantidad de Cajas" type="number" style="font-weight: bold; color: rgb(9, 219, 202);" >
                                         <div class="input-group-append">
@@ -150,12 +167,12 @@
                                     <br>
                                     <br>   
                                     <a id="calc-pv-btn" type="submit" title="Calcular peso volumétrico" href="#"  class="btn alime-btn mb-3 mb-sm-0 mr-4">Calcular peso volumétrico</a>
-                                    <div class="calc-box">
+                                        <div class="calc-box">
                                         <div class="form-group pv-result">
                                          <label class="control-label"></label>
                                              <div class="input-group">
                                                 <input id="resultado" class="form-control1" readonly="" type="text" value="0" style="font-weight: bold; color: rgb(9, 219, 202);">
-                                                  <div class="input-group-append">
+                                                <div class="input-group-append">
                                                  <span class="input-group-text" id="cm-01">Libras Volumen</span>
                                         </div>
                                     </div>      
@@ -185,6 +202,8 @@
                                     </div>
                                 </div>
                             </div>
+                            
+                            <p>Recuerda multiplicar tu resultado por la tarifa que te hemos brindado.</p>
                                 <div class="col-12  foto2">
                                     <div >
                                         <img class="mb-10" src="img/bg-img/caja1.png" alt="">
@@ -245,8 +264,19 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/default-assets/active.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
+            //METODO QUE CALCULA CENTIMETROS A PULGADAS.
+            $("#calc-pulgadas").click(function (e) {
+                e.preventDefault();
+                centimetros = $('#centimetros').val();
+                 pulgadas = centimetros / 2.54;
+                 pulgadas= pulgadas.toFixed(2);
+               $('#pulgadas').css("font-weight", "bold");
+               $('#pulgadas').css("font-weight", "bold");
+               $('#pulgadas').css("color", "black");
+               $('#pulgadas').val(pulgadas);
+           });
+            // METODO QUE CALCULA LAS DIMENSIONES Y PESOS VOLUMETRICOS
             $("#calc-pv-btn").click(function (e) {
-                
                 e.preventDefault();
                 largo = $('#largo').val();
                 ancho = $('#ancho').val();
@@ -271,7 +301,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             });
 
             $("#calc-pv-btn").click(function (e) {
-                
                 e.preventDefault();
                 largo = $('#largo').val();
                 ancho = $('#ancho').val();
