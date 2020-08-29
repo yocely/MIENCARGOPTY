@@ -79,22 +79,22 @@
                                <h6>Nuestra calculadora está establecida en Pulgadas pero si tus medidas estan en CM Puedes llevarlas a Pulgadas con el siguiente botón.</h6>
                                     <div class="input-group">
                                         <input id="centimetros" class="form-control1" placeholder="Centimetros" aria-label="Centimetros" type="number" style="font-weight: bold; color: rgb(9, 219, 202);">
-                                        <div class="input-group-append">
+                                        <div class="input-group-append"> 
                                             <span class="input-group-text" id="cm-01">Centimetros</span>
-                                        </div>
+                                            </div> 
                                             <a id="calc-pulgadas" type="submit" title="Calcular Pulgadas" href="#"  class="btn alime-btn mb-3 mb-sm-0 mr-4">Calcular Pulgadas</a>
                                             <input id="pulgadas" readonly="" class="form-control1" placeholder="Pulgadas" aria-label="Pulgadas" type="number" style="font-weight: bold; color: rgb(9, 219, 202);">
-                                        <div class="input-group-append">
+                                            <div class="input-group-append">
                                             <span class="input-group-text" id="cm-01" placeholder="Pulgadas">Pulgadas</span>
-                                        </div>
+                                            </div>
                                         </div>
                                        <br>
                                        <br>
                                        <h6>Ahora en el siguiente bloque puedes calcular tu volumen con total comodidad.</h6>
-                            <article class="calculadora">
-                                <br>
-                                <div class="calc-box">
-                                    <div class="input-group">
+                                         <article class="calculadora">
+                                        <br>
+                                        <div class="calc-box">
+                                        <div class="input-group">
                                         <input id="largo" class="form-control1" required placeholder="Largo" aria-label="Largo" type="number" style="font-weight: bold; color: rgb(9, 219, 202);">
                                         <div class="input-group-append">
                                             <span class="input-group-text" id="cm-01" >Pulgadas de Largo</span>
@@ -204,20 +204,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             </div>
         </div>
     </footer>
-    <!-- Footer Area End -->
 
-    <!-- **** All JS Files ***** -->
-    <!-- jQuery 2.2.4 -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Popper -->
-    <script src="js/popper.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- All Plugins -->
-    <script src="js/alime.bundle.js"></script>
-    <!-- Active -->
-    <script src="js/default-assets/active.js"></script>
-    
     <script type="text/javascript">
         $(document).ready(function () {
             //METODO QUE CALCULA CENTIMETROS A PULGADAS.
@@ -271,10 +258,20 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 $('#resultadomt').css("font-weight", "bold");
                 $('#resultadomt').css("color", "black");
                 $('#resultadomt').val(total2);
-
             });
-              
         });
-    </script> 
+    </script>
+
+    <!-- jQuery 2.2.4 -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="js/alime.bundle.js"></script>
+    <!-- Active -->
+    <script src="js/default-assets/active.js"></script>
+    
 </body>
 </html>
