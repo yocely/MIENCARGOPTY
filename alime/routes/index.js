@@ -1,7 +1,6 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const router = express.Router();
-
 // CORREO DE REGISTRO CLIENTE
 router.post('/sent-email', async (req, res) => {
     const { id, nombre, apellido, cedula, fecha_de_nacimiento, email, celular, direccion, pais } = req.body;
@@ -42,22 +41,17 @@ router.post('/sent-email', async (req, res) => {
         }
     });
     const info = await transporter.sendMail({
-       
         from: '"No Reply" <noreply@miencargopty.com>', // sender address
         to: email,// list of receivers
         subject: 'CASILLERO MI ENCARGO PTY', // Subject line
         html: contentHTML
     })
-
     const info2 = await transporter.sendMail({
-       
         from: '"NUEVO CLINTE" <noreply@miencargopty.com>', // sender address
         to: 'info@miencargopty.com',// list of receivers
         subject:'NUEVO CLINTE REGISTRADO ', // Subject line
         html: contentHTML2
     })
-
     res.redirect('/mens.html');
 });
 module.exports = router;
- 

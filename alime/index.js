@@ -8,24 +8,12 @@ const app = express();
 const { Router } = require('express');
 const flash = require('connect-flash');
 const session = require('express-session');
-const MysqlStore = require('express-mysql-session');
-const { extname } = require('path');
 const router = Router();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(flash());
 app.use(bodyParser.json());
- // Static folder
 app.use(express.static(path.join(__dirname)));
-//hbs
 app.set('alime', path.join(__dirname, 'alime'));
-app.engine('hbs', exphbs({
-    defaultLayout: 'main',
-    layoutsDir: path.join(app.get('views'), 'layouts'),
-    partialsDir: path.join(app.get('views'), 'partials'),
-    extname: '.hbs',
-    helpers: require('./lib/handlebars')
-}))
-app.set('view engine', '.hbs');
 // middlewares
 app.use(flash());
 app.use(morgan('dev'));
