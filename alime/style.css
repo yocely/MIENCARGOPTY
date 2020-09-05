@@ -113,12 +113,13 @@ ul {
   background-size: contain   !important;
   background-repeat: no-repeat !important; }
   .foto2 {
-     padding: 10px; 
-     margin: 10px; 
+    position: relative;
+     padding: -10px; 
+     margin: -15px; 
      border: 2px; 
-     right: -350px;
+     right: -330px;
      width: 250px; 
-     top: -550px;
+     top: -470px;
      }
      .foto3 {
       padding: 10px; 
@@ -985,6 +986,18 @@ input:required {
     @media only screen and (max-width: 767px) {
       .breadcrumb-area .page-title {
         font-size: 24px; } }
+        @media only screen and (max-width: 767px) {
+          .breadcrumb-area1 {
+            height: 140px;
+            right: -255px;
+            width: 140px;
+           } }
+        .breadcrumb-area1 .page-title {
+          color: #ffffff;
+          font-size: 36px; }
+          @media only screen and (max-width: 767px) {
+            .breadcrumb-area1 .page-title {
+              font-size: 24px; } }
 
 .breadcrumb-content {
   position: relative;
