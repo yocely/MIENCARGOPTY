@@ -1,5 +1,12 @@
-RewriteBase /
-RewriteEngine On
+RewriteEngine on
+ErrorDocument 404 /not-found.html
+RewriteCond %{HTTP_HOST} ^(miencargopty.com)(:80)? [NC]
+RewriteRule ^(.*) http://www.miencargopty.com/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html
